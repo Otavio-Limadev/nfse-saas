@@ -33,3 +33,5 @@ build/
 .vscode/
 postgres-data/
 target/
+*.pfx
+*.p12
