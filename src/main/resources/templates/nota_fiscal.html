@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConsultarNfseEnvio xmlns:th="http://www.thymeleaf.org">
+    <Prestador>
+        <CpfCnpj>
+            <Cnpj th:text="${invoice.company.taxId}"></Cnpj>
+        </CpfCnpj>
+    </Prestador>
+    <Tomador>
+        <CpfCnpj>
+            <Cnpj th:text="${invoice.customer.taxId}"></Cnpj>
+        </CpfCnpj>
+    </Tomador>
+    <Servico>
+        <Descricao th:text="${invoice.serviceItem.description}"></Descricao>
+        <ValorServicos th:text="${invoice.totalValue}"></ValorServicos>
+    </Servico>
+</ConsultarNfseEnvio>
